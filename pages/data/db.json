@@ -1,0 +1,52 @@
+{
+  "reciepe": [
+    {
+      "title": "Coconut Rice",
+      "ingredients": "Rice, coconut, salt,",
+      "author": "Joe Willams",
+      "id": 1
+    },
+    {
+      "title": "American Beans",
+      "ingredients": "Beans, crayfish, palm oil",
+      "author": "Sally ash",
+      "id": 2
+    },
+    {
+      "title": "British Fish",
+      "ingredients": "Fish, pepper, oil",
+      "author": "Wendy law",
+      "id": 3
+    },
+    {
+      "title": "Pizza made Easy",
+      "ingredients": "Flour, Tomato sauce, nutmeg",
+      "author": "Vicky mod",
+      "id": 4
+    },
+    {
+      "title": "Sandwitch",
+      "body": "sand, witch, spices",
+      "author": "Kelly johson",
+      "id": 10
+    },
+    {
+      "title": "salad juice",
+      "body": "cabage, water, milk",
+      "author": "ali sally",
+      "id": 14
+    },
+    {
+      "title": "Egg Roll",
+      "body": "flour, milk, egg",
+      "author": "Sam joe",
+      "id": 15
+    },
+    {
+      "title": "food",
+      "body": "meat. ham ,jelly",
+      "author": "Sam joe",
+      "id": 18
+    }
+  ]
+}

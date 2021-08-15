@@ -1,0 +1,44 @@
+.create {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.label {
+    text-align: left;
+    display: block;
+}
+
+.h {
+    font-size: 20px;
+    color: #f1356d;
+    margin-bottom: 30px;
+}
+
+.call {
+    width: 100px;
+    padding: 6px 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    display: block;
+}
+
+.button {
+    background: #f1356d;
+    color: #fff;
+    border: 0;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.btn {
+    display: block;
+    width: 150px;
+    padding: 8px 0;
+    margin: 20px auto;
+    background: #4979ff;
+    border-radius: 4px;
+    color: white;
+    text-align: center;
+}
