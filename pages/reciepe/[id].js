@@ -1,6 +1,6 @@
 import  { useRouter } from "next/router";
 export const getStaticPaths =async () => {
-    const res = await fetch('http://localhost:9000/reciepe');
+    const res = await fetch('https://obscure-thicket-64942.herokuapp.com/reciepe');
     const data = await res.json();
 
     const paths = data.map(reciepe => {
@@ -17,7 +17,7 @@ export const getStaticPaths =async () => {
 
 export const getStaticProps = async (context) => {
     const id = context.params.id;
-    const res = await fetch(`http://localhost:9000/reciepe/${id}`);
+    const res = await fetch(`https://obscure-thicket-64942.herokuapp.com/reciepe/${id}`);
     const data = await res.json()
     console.log(data);
     return{
@@ -27,7 +27,7 @@ export const getStaticProps = async (context) => {
 const Details = ({reciepe}) => { 
     const router = useRouter();
     const handleDelete = ()=>{
-        fetch('http://localhost:9000/reciepe/' + reciepe.id, 
+        fetch('https://obscure-thicket-64942.herokuapp.com/reciepe/' + reciepe.id,
         {method:'DELETE'
         }).then(()=>router.push('/'))
     }

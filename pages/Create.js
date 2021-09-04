@@ -19,7 +19,7 @@ const Create = () => {
             body,   
             author
         };
-        fetch("http://localhost:9000/reciepe" , {
+        fetch("https://obscure-thicket-64942.herokuapp.com/reciepe" , {
             method: 'POST',
             headers:{ "Content-Type": "application/json" },
             body: JSON.stringify(reciepe)

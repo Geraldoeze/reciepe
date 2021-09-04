@@ -2,7 +2,7 @@ import Link from "next/link";
 import styles from '../../styles/Reciepe.module.css'
 export const getStaticProps = async ()=>{
 
-    const res = await fetch(" http://localhost:9000/reciepe")
+    const res = await fetch(" https://obscure-thicket-64942.herokuapp.com/reciepe")
     const data= await res.json();
 
     return {
