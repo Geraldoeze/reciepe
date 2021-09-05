@@ -1,9 +1,7 @@
 {
   "name": "reciepe-blog",
   "version": "0.1.0",
-  "engines": {
-    "node": "12.16.1"
-  },
+  
   "private": true,
   "scripts": {
     "dev": "next dev",
