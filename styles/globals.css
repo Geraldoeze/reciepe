@@ -3,55 +3,61 @@
 
 body {
   background: #f2f2f2;
-  color: #333;
-  font-family:"Cambria, Cochin, Georgia, Times, 'Times New Roman', serif"
+  color: #ddd;
+  font-family: cursive;
+  margin: 0;
+  height: 100;
+  background:  url(chop.jpg);
+  background-size: cover;
 }
 
+/* Main style */
+
+.content{
+  
+  font-family: Cambria, serif;
+}
+/* All a tags */
 a{
-  color: #333;
   text-decoration: none;
 }
-.content {
-  max-width: 960px;
-  margin: 0 auto
-}
+
+/* Navigation styles */
 nav {
-  margin: 10px auto 80px;
-  padding: 10px 0;
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  border-bottom: 1px solid #ddd;
+  width: 100%;
+  background-color: rgb(50, 58, 66);
+  margin-bottom: 100px;
 }
-nav h1{
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  text-align: center;
+
+.close {
+  margin-left: auto;
+  
+}
+.open{
+  margin-left: auto;
+}
+.open a {
   color: #f1356d;
-  margin-left: 100px;
-  margin-right: 100px;
-  padding-left: 20px;
-  padding-right: 30px;
-
+  margin: 5px;
 }
-nav a{
-  margin-left: 14px;
-    color: #777;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
-
+.close a {
+  color: #f1356d;
 }
-nav.logo {
-  margin-right: auto;
+.logo {
+  width: 60%;
+  color: #f1356d;
+  margin: auto;
 }
-
 
 footer {
-  display: block;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(50, 58, 66);
+  color:#f1356d;
   text-align: center;
-  padding: 30px 0;
-  margin-top: 60px;
-  color: #777;
-  border-top: 1px solid #eaeaea;
 }
 
 .create {
@@ -83,4 +89,95 @@ footer {
   padding: 8px;
   border-radius: 8px;
   cursor: pointer;
+}
+
+
+
+@media (min-width: 480px) {
+  .navbar .DrawerToggle{
+    display: none;
+  }
+  .DrawerToggle {
+      display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar{
+    display: block;
+    height: 40px;
+    width: 100%;
+    /* background:url() ; no-repeat 98% center */
+    background-color: #555;  
+    margin: 0
+  }
+  nav {
+    display: block;
+    margin-left: 0;
+    padding: 0;
+    margin-bottom: 50px;
+  }
+  .open {
+    overflow: hidden;
+    background: #505050;
+    height:0;
+    margin: 0;
+    width: 100%;
+  }
+  .close{
+    height: auto;
+    overflow: hidden;
+    background: #505050;
+    margin: 0;
+    width: 100%;
+    padding: 0;
+  }
+
+  nav ul a {
+    display: block;
+    text-align: left;
+    background: #505050;
+
+    width: 100%;
+    color: white;
+    padding: 10px;
+    border-bottom: 1px solid #404040 ;
+  }
+  
+footer{
+  font-size: 12px;
+}
+} 
+
+
+.Backdrop {
+  
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 6, 0, 0, 0.5);
+
+}
+
+/* Draw Toogle styles */
+.DrawerToggle {
+  width: 40px;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.DrawerToggle div {
+  width: 90%;
+  height: 3px;
+  background-color: white;
+}
+.logo{
+  text-align: center;
 }

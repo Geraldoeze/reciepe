@@ -34,25 +34,26 @@ const Create = () => {
         <div>
             <form onSubmit={handleSubmit} className ={styles.create}>
                 <label className={styles.label} htmlFor="title">Title</label>
-                <input className={styles.call}
+                <input className={styles.input}
                 id='title'
                 type='text'
                 onChange={e => setTitle(e.target.value)}
                 />
-                <label className={styles.label}  htmlFor="body">Body</label>
-                <input className={styles.call}
-                id="body"
-                type="text"
-                onChange={e=> setBody(e.target.value)}
-                />
+                <label className={styles.label}  htmlFor="body">Ingredients</label>
+                <textarea className={styles.input} 
+                    value={this.state.ingredients}
+                    required
+                    onChange={e => setBody(e.target.value)}  
+                    id="ingredients"
+                    type="text"/>
                 <label className={styles.label}  htmlFor="author">Author</label>
-                <input className={styles.call}
+                <input className={styles.input}
                 id='author'
                 type='text'
                 onChange={e=>setAuthor(e.target.value)}
                 />
                 <button 
-                className={styles.btn} type ="submit" 
+                className={styles.btn1} type ="submit" 
                      >Submit</button>
             </form>
         </div>
