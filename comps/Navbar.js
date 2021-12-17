@@ -24,7 +24,7 @@ const Navbar = (props) => {
                <Link href = "/" ><a onClick={props.drawerTogged} >Home</a></Link>
                <Link href = "/about "><a onClick={props.drawerTogged}>About</a></Link>
                <Link href = "/reciepe/"><a onClick={props.drawerTogged}>All Reciepe</a></Link>
-               <Link href = "/add" ><a onClick={props.drawerTogged}> Add Reciepe</a></Link>
+               <Link href = "/Create" ><a onClick={props.drawerTogged}> Add Reciepe</a></Link>
            </ul>
        </nav>
    </div>

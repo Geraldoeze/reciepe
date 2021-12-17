@@ -42,10 +42,9 @@ const Create = () => {
                 />
                 <label className={styles.label}  htmlFor="body">Ingredients</label>
                 <textarea className={styles.input} 
-                    value={this.state.ingredients}
                     required
                     onChange={e => setBody(e.target.value)}  
-                    id="ingredients"
+                    id="body"
                     type="text"/>
                 <label className={styles.label}  htmlFor="author">Author</label>
                 <input className={styles.input}
