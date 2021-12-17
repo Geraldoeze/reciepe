@@ -19,14 +19,14 @@ const Create = () => {
             body,   
             author
         };
-        // fetch("https://obscure-thicket-64942.herokuapp.com/reciepe" , {
-        //     method: 'POST',
-        //     headers:{ "Content-Type": "application/json" },
-        //     body: JSON.stringify(reciepe)
-        // }).then(() => {
-        //     console.log('new blog added');
-        //     router.push('/reciepe');
-        // })
+         fetch("https://obscure-thicket-64942.herokuapp.com/reciepe" , {
+            method: 'POST',
+            headers:{ "Content-Type": "application/json" },
+            body: JSON.stringify(reciepe)
+        }).then(() => {
+            console.log('new blog added');
+            router.push('/reciepe');
+        })
          console.log(reciepe)
     }
     
