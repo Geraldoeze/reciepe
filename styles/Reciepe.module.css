@@ -6,7 +6,7 @@
     border-left: 8px solid #fff;
 }
 .single:hover{
-    border-left: 6px solid orangered;
+    border-left: 6px solid rgba(81, 103, 150, 0.747);
 }
 
 .kilo{
@@ -14,5 +14,23 @@
         'Arial Narrow',
         Arial,
         sans-serif;
-    color: #f1356d;
+    color: #085012c1;
 }
+
+.btn {
+    color: red;    
+    background-color: transparent;
+    color:rgba(230, 67, 18, 0.925);
+    border: 1px solid rgba(14, 240, 248, 0.822);
+    font-weight:bold ;
+    cursor: pointer;
+    margin: 5px;
+    padding: 10px 5px;
+    text-align: center;
+}
+    
+.btn1:hover,
+.btni:active {
+        background-color: rgb(0, 255, 136);
+        color: rgb(22, 1, 1);
+      }

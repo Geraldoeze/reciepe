@@ -1,10 +1,10 @@
 const Footer = () => {
     return ( 
-        <footer>
-            <div className="footer">
-                <h3>Reciepes Info</h3>
-            </div>
-        </footer>
+       <footer> 
+        <div>
+            <h1>Next.js Application @2021</h1>
+        </div>
+       </footer> 
      );
 }
  

@@ -19,19 +19,20 @@ const Create = () => {
             body,   
             author
         };
-        fetch("https://obscure-thicket-64942.herokuapp.com/reciepe" , {
-            method: 'POST',
-            headers:{ "Content-Type": "application/json" },
-            body: JSON.stringify(reciepe)
-        }).then(() => {
-            console.log('new blog added');
-            router.push('/reciepe');
-        })
-         
+        // fetch("https://obscure-thicket-64942.herokuapp.com/reciepe" , {
+        //     method: 'POST',
+        //     headers:{ "Content-Type": "application/json" },
+        //     body: JSON.stringify(reciepe)
+        // }).then(() => {
+        //     console.log('new blog added');
+        //     router.push('/reciepe');
+        // })
+         console.log(reciepe)
     }
     
     return (
-        <div>
+        <div className={styles.cont}>
+            <h1 className={styles.hhh}> Add a Post</h1>
             <form onSubmit={handleSubmit} className ={styles.create}>
                 <label className={styles.label} htmlFor="title">Title</label>
                 <input className={styles.input}
