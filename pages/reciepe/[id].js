@@ -1,4 +1,5 @@
 import  { useRouter } from "next/router";
+import styles from "../../styles/Reciepe.module.css"
 export const getStaticPaths =async () => {
     const res = await fetch('https://obscure-thicket-64942.herokuapp.com/reciepe');
     const data = await res.json();
@@ -32,11 +33,11 @@ const Details = ({reciepe}) => {
         }).then(()=>router.push('/'))
     }
     return (
-        <div>
+        <div className={styles.salt}>
             <h1>{reciepe.title}</h1>
             <h2>{reciepe.ingredients}</h2>
             <h3>{reciepe.author}</h3>
-            <button onClick={handleDelete}>Delete blog</button>
+            <button onClick={handleDelete} className={styles.btn3}>Delete blog</button>
         </div>
     );
 }

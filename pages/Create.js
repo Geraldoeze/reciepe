@@ -1,7 +1,7 @@
 import {useState} from 'react';
 import  styles from "../styles/Create.module.css";
 import { useRouter } from 'next/router';
-
+import { useEffect } from "react";
 
 
 const Create = () => {
@@ -11,7 +11,7 @@ const Create = () => {
     
     const router =useRouter();
     
-
+    
     const handleSubmit = e => {
         e.preventDefault();
         const reciepe = {
@@ -24,11 +24,15 @@ const Create = () => {
             headers:{ "Content-Type": "application/json" },
             body: JSON.stringify(reciepe)
         }).then(() => {
-            console.log('new blog added');
-            router.push('/reciepe');
-        })
-         console.log(reciepe)
+            console.log('new blog added');        
+         setTimeout(() =>{
+            router.push('/');
+        }, 1500)
+    })
     }
+    useEffect(() =>{
+       
+    }, [])
     
     return (
         <div className={styles.cont}>

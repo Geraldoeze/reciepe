@@ -6,15 +6,16 @@
     border-left: 8px solid #fff;
 }
 .single:hover{
-    border-left: 6px solid rgba(81, 103, 150, 0.747);
+    border-left: 4px solid rgba(224, 92, 15, 0.747);
 }
 
 .kilo{
+        text-align: center;
         font-family: 'Franklin Gothic Medium',
         'Arial Narrow',
         Arial,
         sans-serif;
-    color: #085012c1;
+    color: #f1356d;
 }
 
 .btn {
@@ -33,4 +34,34 @@
 .btni:active {
         background-color: rgb(0, 255, 136);
         color: rgb(22, 1, 1);
+      }
+
+    /* [id].js styles */
+    .salt{
+        text-align: center;
+        width: 60%;
+        margin:auto;
+        border: 1px solid rgb(49, 3, 3);
+        background-color: wheat;
+        color: #f1356d;
+    }
+
+    .btn3 {
+    
+        background-color: transparent;
+        color:rgba(230, 67, 18, 0.925);
+        border: 1px solid rgba(150, 150, 140, 0.822);
+        font-weight:bold ;
+        cursor: pointer;
+        margin: 15px;
+        padding: 10px 5px;
+        width: 20%;
+        text-align: center;
+        
+      }
+    
+      .btn3:hover,
+      .btn3:active {
+        background-color: rgb(0, 238, 255);
+        color: rgb(233, 4, 92);
       }

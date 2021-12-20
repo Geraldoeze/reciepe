@@ -17,7 +17,7 @@ const Reciepe = ({ reciepe }) => {
             {reciepe.map(reciepe => (
                 <Link href={'/reciepe/' + reciepe.id} key={reciepe.id}>
                     <a className={styles.single}>
-                    <h3>{ reciepe.title }</h3>
+                    <h3 style={{color:"chocolate"}}>{ reciepe.title }</h3>
                     </a>
                 </Link>    
             ))}
